@@ -15,7 +15,7 @@ class StudentTest {
 
     @Test
     void testAddScore(){
-//        Student s1 = new Student("6xxxxxx", "heart");
+
         s1.addScore(40);
         assertEquals(40, s1.getScore());
         s1.addScore(30);
@@ -24,7 +24,7 @@ class StudentTest {
 
     @Test
     void testCalculateGrade(){
-//        Student s1 = new Student("6xxxxxx", "heart", 50);
+        Student s1 = new Student("6xxxxxx", "heart", 50);
         s1.addScore(10);
         assertEquals("C", s1.grade());
     }
